@@ -1,0 +1,11 @@
+
+__pycache__/
+*.pyc
+*.h5
+.env
+venv/
+.idea/
+.DS_Store
+*.log
+models/*.pth
+
