@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <!-- Contact Us Page -->
+<div id="contact" class="page">
+    <div class="about-content">
+        <h1 class="text-3xl font-bold mb-6 title">Contact Us</h1>
+
+        <div class="contact-form">
+            <form action="/submit_contact" method="post">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg font-medium">Name</label>
+                    <input type="text" id="name" name="name" required 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div class="mb-4">
+                    <label for="email" class="block text-lg font-medium">Email</label>
+                    <input type="email" id="email" name="email" required 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div class="mb-4">
+                    <label for="subject" class="block text-lg font-medium">Subject</label>
+                    <input type="text" id="subject" name="subject" required 
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div class="mb-4">
+                    <label for="message" class="block text-lg font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" required 
+                              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+
+                <button type="submit" 
+                        class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
